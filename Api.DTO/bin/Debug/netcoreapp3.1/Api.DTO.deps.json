@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Api.DTO/1.0.0": {
+        "dependencies": {
+          "Api.Enum": "1.0.0"
+        },
+        "runtime": {
+          "Api.DTO.dll": {}
+        }
+      },
+      "Api.Enum/1.0.0": {
+        "runtime": {
+          "Api.Enum.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Api.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Api.Enum/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

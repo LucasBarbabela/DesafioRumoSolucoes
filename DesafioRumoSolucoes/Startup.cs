@@ -1,4 +1,3 @@
-using DesafioRumoSolucoes.Configurations;
 using Microsoft.EntityFrameworkCore.InMemory;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -7,6 +6,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using Microsoft.EntityFrameworkCore;
+using Api.Repository.Configurations;
+using Api.Repository.Repository;
+using Api.Repository.Interface;
+using Api.Service.Interface;
+using Api.Service.Service;
 
 namespace DesafioRumoSolucoes
 {
@@ -24,6 +28,8 @@ namespace DesafioRumoSolucoes
         {
             services.AddDbContext<CarDealershipContext>(opt => opt.UseInMemoryDatabase(databaseName: "Database"));
             services.AddScoped<CarDealershipContext, CarDealershipContext>();
+            services.AddScoped<ISaleService, SaleService>();
+            services.AddScoped<ISaleRepository, SaleRepository>();
             services.AddControllers();
         }
 

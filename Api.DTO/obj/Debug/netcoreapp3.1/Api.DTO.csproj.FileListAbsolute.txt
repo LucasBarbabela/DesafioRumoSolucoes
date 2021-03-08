@@ -1,0 +1,12 @@
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.DTO\bin\Debug\netcoreapp3.1\Api.DTO.deps.json
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.DTO\bin\Debug\netcoreapp3.1\Api.DTO.dll
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.DTO\bin\Debug\netcoreapp3.1\Api.DTO.pdb
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.DTO\bin\Debug\netcoreapp3.1\Api.Enum.dll
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.DTO\bin\Debug\netcoreapp3.1\Api.Enum.pdb
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.DTO\obj\Debug\netcoreapp3.1\Api.DTO.csprojAssemblyReference.cache
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.DTO\obj\Debug\netcoreapp3.1\Api.DTO.csproj.CoreCompileInputs.cache
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.DTO\obj\Debug\netcoreapp3.1\Api.DTO.AssemblyInfoInputs.cache
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.DTO\obj\Debug\netcoreapp3.1\Api.DTO.AssemblyInfo.cs
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.DTO\obj\Debug\netcoreapp3.1\Api.DTO.csproj.CopyComplete
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.DTO\obj\Debug\netcoreapp3.1\Api.DTO.dll
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.DTO\obj\Debug\netcoreapp3.1\Api.DTO.pdb
