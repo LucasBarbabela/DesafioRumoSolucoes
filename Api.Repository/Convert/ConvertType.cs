@@ -76,9 +76,9 @@ namespace Api.Repository.Convert
                 CarSeller = To(value.CarSeller)
             };
         }
-        public static ICollection<Car> To(List<CarDTO> value)
+        public static List<Car> To(List<CarDTO> value)
         {
-            ICollection<Car> listReturn = new List<Car>();
+            List<Car> listReturn = new List<Car>();
             
             foreach(CarDTO car in value)
             {

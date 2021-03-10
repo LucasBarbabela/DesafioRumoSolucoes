@@ -1,4 +1,5 @@
-﻿using Api.Enum;
+﻿using Api.DTO;
+using Api.Enum;
 using Api.Utility.Exception;
 using System;
 using System.Collections.Generic;
@@ -32,6 +33,17 @@ namespace Api.Utility
             var type = value.GetType();
             return type.IsValueType
                 && Object.Equals(value, Activator.CreateInstance(type));
+        }
+
+        public static List<int> IdExtract(List<CarDTO> values)
+        {
+            List<int> listReturn = new List<int>();
+            foreach(CarDTO value in values)
+            {
+                    listReturn.Add(value.Id);
+            }
+
+            return listReturn;
         }
     }
 }

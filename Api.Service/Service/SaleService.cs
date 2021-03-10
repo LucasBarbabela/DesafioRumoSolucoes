@@ -32,5 +32,10 @@ namespace Api.Service.Service
         {
             return this._repository.UpdateStatus(id, process);
         }
+
+        public void CreateMock()
+        {
+            this._repository.CreateMock();
+        }
     }
 }

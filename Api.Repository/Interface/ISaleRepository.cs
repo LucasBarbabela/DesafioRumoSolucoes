@@ -11,6 +11,7 @@ namespace Api.Repository.Interface
     {
         public ActionResult<SaleDTO> SearchSaleById(int id);
         public ActionResult<int> SaveVehicleSale(SaleDTO newSale);
+        public void CreateMock();
         public ActionResult<SaleDTO> UpdateStatus(int id, ProcessStatusEnum process);
     }
 }

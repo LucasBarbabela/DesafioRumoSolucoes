@@ -16,5 +16,10 @@ namespace Api.Repository.Configurations
         {
 
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Sale>().HasMany(b => b.Cars).WithOne();
+        }
     }
 }

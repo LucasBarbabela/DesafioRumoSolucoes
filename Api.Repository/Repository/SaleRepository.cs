@@ -13,12 +13,12 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using Api.Repository.Convert;
 using System.ComponentModel.Design;
+using Microsoft.EntityFrameworkCore;
 
 namespace Api.Repository.Repository
 {
     public class SaleRepository : ISaleRepository
     {
-        public static int count = 0;
         ApiResponse _apiResponse = null;
         private Sale _response;
         private readonly CarDealershipContext _context;
@@ -27,54 +27,47 @@ namespace Api.Repository.Repository
         {
             this._context = context;
             this._apiResponse = new ApiResponse();
-
-
-            this.Mock();
-        }
-
-        public void Dispose()
-        {
-            if (_apiResponse != null)
-            {
-                _apiResponse = null;
-            }
-            if (_response != null)
-            {
-                _response = new Sale();
-            }
         }
 
         public ActionResult<SaleDTO> SearchSaleById(int id)
         {
-            try {
-            Functions.IdIsValid(id);
-            _response = this._context.Sale.SingleOrDefault(x => x.Id == 1);
+            try
+            {
+                Functions.IdIsValid(id);    
+                var query = from s in _context.Sale.Include(a => a.Cars).Include(b => b.CarSeller) select s;
+                _response = query.SingleOrDefault(x => x.Id == id);
 
-            if (_response == null)
-                throw new ApiException(StatusCodeEnum.NoContent, MsgException.SaleNotFound);
+                if (_response == null)
+                    throw new ApiException(StatusCodeEnum.NoContent, MsgException.SaleNotFound);
 
-                var a = ConvertType.To(_response);
-            return _apiResponse.ResponseRet<SaleDTO>(StatusCodeEnum.OK, ConvertType.To(_response));
-            } 
+                return _apiResponse.ResponseRet<SaleDTO>(StatusCodeEnum.OK, ConvertType.To(_response));
+            }
             catch (ApiException e)
             {
                 return _apiResponse.ResponseRet<SaleDTO>(e);
             }
             catch (Exception e)
             {
-                throw new Exception();
                 return _apiResponse.ResponseRetWithoutEnumerable(e);
             }
         }
 
-        public ActionResult<int> SaveVehicleSale(SaleDTO newSale)
+        public ActionResult<int> SaveVehicleSale(SaleDTO newSaleDTO)
         {
-            try 
+            try
             {
-                if (Functions.IsAnyNullOrEmpty(newSale))
+                newSaleDTO.Id = 0;
+                newSaleDTO.Status = ProcessStatusEnum.ConfirmingPayment;
+                List<int> idList;
+                Sale newSale;
+
+                if (Functions.IsAnyNullOrEmpty(newSaleDTO))
                     new ApiException(StatusCodeEnum.BadRequest, MsgException.ObjectAtributeNull);
 
-                _context.Sale.Add(ConvertType.To(newSale));
+                idList = new List<int>(Functions.IdExtract(newSaleDTO.Cars));
+                newSale = ConvertType.To(newSaleDTO);
+                newSale.Cars = GetCarList(idList);
+                _context.Sale.Add(newSale);
                 _context.SaveChanges();
 
                 return _apiResponse.ResponseRet<int>(StatusCodeEnum.OK, newSale.Id);
@@ -94,7 +87,21 @@ namespace Api.Repository.Repository
             throw new NotImplementedException();
         }
 
-        public void Mock()
+        public List<Car> GetCarList(List<int> ids)
+        {
+            List<Car> returnList = new List<Car>();
+            foreach (int id in ids)
+            {
+                Car aux = _context.Car.SingleOrDefault(x => x.Id == id);
+                if (aux == null)
+                    throw new ApiException(StatusCodeEnum.BadRequest, MsgException.CarIdNotFound);
+                else
+                returnList.Add(aux);
+            }
+            return returnList;
+        }
+
+        public void CreateMock()
         {
             List<Car> listCar = new List<Car>();
 
@@ -107,7 +114,7 @@ namespace Api.Repository.Repository
             _context.Seller.Add(seller);
             this._context.SaveChanges();
 
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= 3; i++)
             {
 
                 Car car = new Car
@@ -120,21 +127,16 @@ namespace Api.Repository.Repository
                 this._context.Car.Add(car);
                 this._context.SaveChanges();
 
-                var a = this._context.Car.ToList();
-                var b = _context.Car.SingleOrDefault(x => x.Id == i);
 
-                listCar.Add(_context.Car.SingleOrDefault(x => x.Id == i));
                 Sale sale = new Sale
                 {
-                    Cars = listCar,
                     Date = DateTime.Now,
                     Status = ProcessStatusEnum.Approved,
                     CarSeller = _context.Seller.SingleOrDefault(x => x.Id == 1)
                 };
+                sale.Cars.Add(_context.Car.SingleOrDefault(x => x.Id == i));
                 this._context.Sale.Add(sale);
                 this._context.SaveChanges();
-
-                listCar = new List<Car>();
             }
         }
     }

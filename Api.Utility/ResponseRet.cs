@@ -44,6 +44,8 @@ namespace Api.Utility
             {
                 case StatusCodeEnum.BadRequest:
                     return BadRequest(response);
+                case StatusCodeEnum.NoContent:
+                    return NoContent();
                 default:
                     return StatusCode(500, response);
             }

@@ -15,6 +15,8 @@ namespace Api.Utility
         SaleNotFound = 2,
         [Description("O objeto passado está com algum valor nulo!")]
         ObjectAtributeNull = 3,
+        [Description("O Id de carro passado é inválido")]
+        CarIdNotFound = 4
     }
 
     public static class MSGD

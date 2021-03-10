@@ -27,10 +27,17 @@ namespace DesafioRumoSolucoes.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create([FromBody] SaleDTO newSale)
+        [Route("Create")]
+        public ActionResult<int> Create([FromBody] SaleDTO newSale)
         {
-            this._service.SaveVehicleSale(newSale);
-            return Ok();
+            return this._service.SaveVehicleSale(newSale);
+        }
+
+        [HttpGet]
+        [Route("CreateMock")]
+        public void CreateMock()
+        {
+            this._service.CreateMock();
         }
 
         [HttpPut]

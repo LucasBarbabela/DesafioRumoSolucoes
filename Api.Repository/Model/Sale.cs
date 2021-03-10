@@ -12,6 +12,7 @@ namespace Api.Repository.Model
         public Sale()
         {
             this.Cars = new List<Car>();
+            this.CarSeller = new Seller();
         }
 
         [Key]
@@ -22,8 +23,7 @@ namespace Api.Repository.Model
         public ProcessStatusEnum Status { get; set; }
         [Required]
         public Seller CarSeller { get; set; }
-        [Required]
-        public ICollection<Car> Cars { get; set; }
+        public virtual List<Car> Cars { get; set; }
 
     }
 }
