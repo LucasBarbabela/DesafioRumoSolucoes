@@ -84,7 +84,14 @@ namespace Api.Repository.Repository
 
         public ActionResult<SaleDTO> UpdateStatus(int id, ProcessStatusEnum process)
         {
-            throw new NotImplementedException();
+            Sale sale = _context.Sale.SingleOrDefault(x => x.Id == id);
+
+            if(Functions.StatusProgress(sale.Status, process))
+            {
+                sale.Status = process;
+            }
+            _context.SaveChanges();
+            return _apiResponse.ResponseRet<SaleDTO>(StatusCodeEnum.OK,ConvertType.To(sale));
         }
 
         public List<Car> GetCarList(List<int> ids)
@@ -131,7 +138,7 @@ namespace Api.Repository.Repository
                 Sale sale = new Sale
                 {
                     Date = DateTime.Now,
-                    Status = ProcessStatusEnum.Approved,
+                    Status = ProcessStatusEnum.ConfirmingPayment,
                     CarSeller = _context.Seller.SingleOrDefault(x => x.Id == 1)
                 };
                 sale.Cars.Add(_context.Car.SingleOrDefault(x => x.Id == i));

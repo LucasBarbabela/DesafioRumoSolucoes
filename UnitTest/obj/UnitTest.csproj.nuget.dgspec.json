@@ -1,0 +1,488 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\UnitTest\\UnitTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.DTO\\Api.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.DTO\\Api.DTO.csproj",
+        "projectName": "Api.DTO",
+        "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.DTO\\Api.DTO.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\lucas\\source\\repos\\TestePortabilidade\\Teste2\\bin\\Release": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Enum\\Api.Enum.csproj": {
+                "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Enum\\Api.Enum.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Enum\\Api.Enum.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Enum\\Api.Enum.csproj",
+        "projectName": "Api.Enum",
+        "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Enum\\Api.Enum.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Enum\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\lucas\\source\\repos\\TestePortabilidade\\Teste2\\bin\\Release": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Repository\\Api.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Repository\\Api.Repository.csproj",
+        "projectName": "Api.Repository",
+        "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Repository\\Api.Repository.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\lucas\\source\\repos\\TestePortabilidade\\Teste2\\bin\\Release": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.DTO\\Api.DTO.csproj": {
+                "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.DTO\\Api.DTO.csproj"
+              },
+              "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Utility\\Api.Utility.csproj": {
+                "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Utility\\Api.Utility.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Service\\Api.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Service\\Api.Service.csproj",
+        "projectName": "Api.Service",
+        "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Service\\Api.Service.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\lucas\\source\\repos\\TestePortabilidade\\Teste2\\bin\\Release": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.DTO\\Api.DTO.csproj": {
+                "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.DTO\\Api.DTO.csproj"
+              },
+              "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Enum\\Api.Enum.csproj": {
+                "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Enum\\Api.Enum.csproj"
+              },
+              "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Repository\\Api.Repository.csproj": {
+                "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Repository\\Api.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Utility\\Api.Utility.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Utility\\Api.Utility.csproj",
+        "projectName": "Api.Utility",
+        "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Utility\\Api.Utility.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Utility\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\lucas\\source\\repos\\TestePortabilidade\\Teste2\\bin\\Release": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.DTO\\Api.DTO.csproj": {
+                "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.DTO\\Api.DTO.csproj"
+              },
+              "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Enum\\Api.Enum.csproj": {
+                "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Enum\\Api.Enum.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\DesafioRumoSolucoes\\DesafioRumoSolucoes.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\DesafioRumoSolucoes\\DesafioRumoSolucoes.csproj",
+        "projectName": "DesafioRumoSolucoes",
+        "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\DesafioRumoSolucoes\\DesafioRumoSolucoes.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\DesafioRumoSolucoes\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\lucas\\source\\repos\\TestePortabilidade\\Teste2\\bin\\Release": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Repository\\Api.Repository.csproj": {
+                "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Repository\\Api.Repository.csproj"
+              },
+              "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Service\\Api.Service.csproj": {
+                "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Service\\Api.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\UnitTest\\UnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\UnitTest\\UnitTest.csproj",
+        "projectName": "UnitTest",
+        "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\UnitTest\\UnitTest.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\UnitTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\lucas\\source\\repos\\TestePortabilidade\\Teste2\\bin\\Release": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\DesafioRumoSolucoes\\DesafioRumoSolucoes.csproj": {
+                "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\DesafioRumoSolucoes\\DesafioRumoSolucoes.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.10.3, )"
+            },
+            "Microsoft.AspNetCore.TestHost": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

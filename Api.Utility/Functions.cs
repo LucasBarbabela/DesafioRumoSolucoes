@@ -45,5 +45,17 @@ namespace Api.Utility
 
             return listReturn;
         }
+
+        public static bool StatusProgress(ProcessStatusEnum currentStatus, ProcessStatusEnum newStatus)
+        {
+            if (currentStatus == ProcessStatusEnum.Delivered || currentStatus == ProcessStatusEnum.Cancelled)
+                return false;
+            if (newStatus == currentStatus + 1)
+                return true;
+            if ((int)currentStatus < 2 && newStatus == ProcessStatusEnum.Cancelled)
+                return true;
+            else
+                return false;
+        }
     }
 }

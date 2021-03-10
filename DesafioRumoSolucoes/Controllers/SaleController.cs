@@ -41,9 +41,12 @@ namespace DesafioRumoSolucoes.Controllers
         }
 
         [HttpPut]
-        public ActionResult<SaleDTO> Update(int id, ProcessStatusEnum process)
+        [Route("Update")]
+        public ActionResult<SaleDTO> Update([FromBody] UpdateStatusDTO newStatus)
         {
-            return this._service.UpdateStatus(id, process);
+            //return this._service.UpdateStatus(newStatus.Id, newStatus.Process);
+            newStatus.Id += 1;
+            return null;
         }
     }
 }
