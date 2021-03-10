@@ -11,13 +11,13 @@ namespace Api.Repository.Model
         [Key]
         public int Id { get; set; }
         [Required]
-        public string Marca { get; set; }
+        public string Brand { get; set; }
         [Required]
-        public string Modelo { get; set; }
+        public string Type { get; set; }
         [Required]
-        public int Ano { get; set; }
+        public int Year { get; set; }
         [Required]
-        public string Fabricacao { get; set; }
+        public string Fabrication { get; set; }
 
     }
 }

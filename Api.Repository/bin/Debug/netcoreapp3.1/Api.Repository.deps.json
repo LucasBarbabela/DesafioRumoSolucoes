@@ -9,6 +9,7 @@
       "Api.Repository/1.0.0": {
         "dependencies": {
           "Api.DTO": "1.0.0",
+          "Api.Utility": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.EntityFrameworkCore": "3.1.12"
         },
@@ -863,6 +864,16 @@
         "runtime": {
           "Api.Enum.dll": {}
         }
+      },
+      "Api.Utility/1.0.0": {
+        "dependencies": {
+          "Api.DTO": "1.0.0",
+          "Api.Enum": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
+        },
+        "runtime": {
+          "Api.Utility.dll": {}
+        }
       }
     }
   },
@@ -1452,6 +1463,11 @@
       "sha512": ""
     },
     "Api.Enum/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Api.Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

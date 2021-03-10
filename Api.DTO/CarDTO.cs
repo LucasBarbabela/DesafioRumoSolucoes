@@ -6,10 +6,10 @@ namespace Api.DTO
 {
     public class CarDTO
     {
-        public int Id { get; }
-        public string Marca { get; set; }
-        public string Modelo { get; set; }
-        public int Ano { get; set; }
-        public string Fabricacao { get; set; }
+        public int Id { get; set; }
+        public string Brand { get; set; }
+        public string Type { get; set; }
+        public int Year { get; set; }
+        public string Fabrication { get; set; }
     }
 }

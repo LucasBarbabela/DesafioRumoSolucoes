@@ -9,6 +9,11 @@ namespace Api.Repository.Model
 {
     public class Sale
     {
+        public Sale()
+        {
+            this.Cars = new List<Car>();
+        }
+
         [Key]
         public int Id { get; set; }
         [Required]
@@ -19,5 +24,6 @@ namespace Api.Repository.Model
         public Seller CarSeller { get; set; }
         [Required]
         public ICollection<Car> Cars { get; set; }
+
     }
 }

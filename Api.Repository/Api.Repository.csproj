@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Api.DTO\Api.DTO.csproj" />
+    <ProjectReference Include="..\Api.Utility\Api.Utility.csproj" />
   </ItemGroup>
 
 </Project>

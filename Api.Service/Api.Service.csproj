@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Api.DTO\Api.DTO.csproj" />
     <ProjectReference Include="..\Api.Enum\Api.Enum.csproj" />
+    <ProjectReference Include="..\Api.Repository\Api.Repository.csproj" />
   </ItemGroup>
 
 </Project>

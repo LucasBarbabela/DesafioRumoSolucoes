@@ -1156,6 +1156,21 @@
         "runtime": {
           "bin/placeholder/Api.Enum.dll": {}
         }
+      },
+      "Api.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Api.DTO": "1.0.0",
+          "Api.Enum": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
+        },
+        "compile": {
+          "bin/placeholder/Api.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Api.Utility.dll": {}
+        }
       }
     }
   },
@@ -4172,11 +4187,17 @@
       "type": "project",
       "path": "../Api.Enum/Api.Enum.csproj",
       "msbuildProject": "../Api.Enum/Api.Enum.csproj"
+    },
+    "Api.Utility/1.0.0": {
+      "type": "project",
+      "path": "../Api.Utility/Api.Utility.csproj",
+      "msbuildProject": "../Api.Utility/Api.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Api.DTO >= 1.0.0",
+      "Api.Utility >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Core >= 2.2.5",
       "Microsoft.EntityFrameworkCore >= 3.1.12"
     ]
@@ -4210,6 +4231,9 @@
           "projectReferences": {
             "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.DTO\\Api.DTO.csproj": {
               "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.DTO\\Api.DTO.csproj"
+            },
+            "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Utility\\Api.Utility.csproj": {
+              "projectPath": "C:\\Users\\lucas\\source\\repos\\DesafioRumoSolucoes\\Api.Utility\\Api.Utility.csproj"
             }
           }
         }

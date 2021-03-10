@@ -7,7 +7,7 @@ namespace Api.DTO
 {
     public class SaleDTO
     {
-        public int Id { get; }
+        public int Id { get; set; }
         public DateTime Date { get; set; }
         public ProcessStatusEnum Status { get; set; }
         public SellerDTO CarSeller { get; set; }

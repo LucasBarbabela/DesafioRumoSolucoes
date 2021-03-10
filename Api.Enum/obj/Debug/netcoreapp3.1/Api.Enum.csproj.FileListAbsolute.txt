@@ -1,7 +1,6 @@
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Enum\bin\Debug\netcoreapp3.1\Api.Enum.deps.json
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Enum\bin\Debug\netcoreapp3.1\Api.Enum.dll
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Enum\bin\Debug\netcoreapp3.1\Api.Enum.pdb
-C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Enum\obj\Debug\netcoreapp3.1\Api.Enum.csprojAssemblyReference.cache
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Enum\obj\Debug\netcoreapp3.1\Api.Enum.csproj.CoreCompileInputs.cache
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Enum\obj\Debug\netcoreapp3.1\Api.Enum.AssemblyInfoInputs.cache
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Enum\obj\Debug\netcoreapp3.1\Api.Enum.AssemblyInfo.cs

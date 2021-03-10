@@ -1,6 +1,5 @@
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\DesafioRumoSolucoes\obj\Debug\netcoreapp3.1\DesafioRumoSolucoes.csprojAssemblyReference.cache
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\DesafioRumoSolucoes\obj\Debug\netcoreapp3.1\DesafioRumoSolucoes.csproj.CoreCompileInputs.cache
-C:\Users\lucas\source\repos\DesafioRumoSolucoes\DesafioRumoSolucoes\obj\Debug\netcoreapp3.1\DesafioRumoSolucoes.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\DesafioRumoSolucoes\obj\Debug\netcoreapp3.1\DesafioRumoSolucoes.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\DesafioRumoSolucoes\obj\Debug\netcoreapp3.1\DesafioRumoSolucoes.AssemblyInfoInputs.cache
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\DesafioRumoSolucoes\obj\Debug\netcoreapp3.1\DesafioRumoSolucoes.AssemblyInfo.cs
@@ -51,3 +50,5 @@ C:\Users\lucas\source\repos\DesafioRumoSolucoes\DesafioRumoSolucoes\obj\Debug\ne
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\DesafioRumoSolucoes\obj\Debug\netcoreapp3.1\DesafioRumoSolucoes.dll
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\DesafioRumoSolucoes\obj\Debug\netcoreapp3.1\DesafioRumoSolucoes.pdb
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\DesafioRumoSolucoes\obj\Debug\netcoreapp3.1\DesafioRumoSolucoes.genruntimeconfig.cache
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\DesafioRumoSolucoes\bin\Debug\netcoreapp3.1\Api.Utility.dll
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\DesafioRumoSolucoes\bin\Debug\netcoreapp3.1\Api.Utility.pdb

@@ -9,8 +9,8 @@ namespace Api.Service.Interface
 {
     public interface ISaleService
     {
-        public ActionResult<SaleDTO> SaveVehicleSale(SaleDTO newSale);
         public ActionResult<SaleDTO> SearchSaleById(int id);
+        public ActionResult<int> SaveVehicleSale(SaleDTO newSale);
         public ActionResult<SaleDTO> UpdateStatus(int id, ProcessStatusEnum process);
     }
 }

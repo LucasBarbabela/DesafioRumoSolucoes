@@ -12,3 +12,7 @@ C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Service\obj\Debug\netcoreapp
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Service\obj\Debug\netcoreapp3.1\Api.Service.csproj.CopyComplete
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Service\obj\Debug\netcoreapp3.1\Api.Service.dll
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Service\obj\Debug\netcoreapp3.1\Api.Service.pdb
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Service\bin\Debug\netcoreapp3.1\Api.Repository.dll
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Service\bin\Debug\netcoreapp3.1\Api.Repository.pdb
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Service\bin\Debug\netcoreapp3.1\Api.Utility.dll
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Service\bin\Debug\netcoreapp3.1\Api.Utility.pdb

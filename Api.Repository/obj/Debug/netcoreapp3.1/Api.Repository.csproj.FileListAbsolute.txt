@@ -12,3 +12,5 @@ C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Repository\obj\Debug\netcore
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Repository\obj\Debug\netcoreapp3.1\Api.Repository.dll
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Repository\obj\Debug\netcoreapp3.1\Api.Repository.pdb
 C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Repository\obj\Debug\netcoreapp3.1\Api.Repository.csproj.CoreCompileInputs.cache
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Repository\bin\Debug\netcoreapp3.1\Api.Utility.dll
+C:\Users\lucas\source\repos\DesafioRumoSolucoes\Api.Repository\bin\Debug\netcoreapp3.1\Api.Utility.pdb

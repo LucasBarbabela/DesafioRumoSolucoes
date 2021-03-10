@@ -11,12 +11,11 @@ namespace Api.Repository.Model
         [Key]
         public int Id { get; set; }
         [Required]
-        public string Nome { get; set; }
+        public string Name { get; set; }
         [Required]
         public string Cpf { get; set; }
         [Required]
         public string Email { get; set; }
-        [Required]
-        public ICollection<Sale> Sales { get; set; }
+
     }
 }
