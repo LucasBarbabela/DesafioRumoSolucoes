@@ -84,14 +84,26 @@ namespace Api.Repository.Repository
 
         public ActionResult<SaleDTO> UpdateStatus(int id, ProcessStatusEnum process)
         {
-            Sale sale = _context.Sale.SingleOrDefault(x => x.Id == id);
-
-            if(Functions.StatusProgress(sale.Status, process))
+            try
             {
-                sale.Status = process;
+                Functions.IdIsValid(id);
+                Sale sale = _context.Sale.SingleOrDefault(x => x.Id == id);
+
+                if(Functions.StatusProgress(sale.Status, process))
+                {
+                    sale.Status = process;
+                }
+                _context.SaveChanges();
+                return _apiResponse.ResponseRet<SaleDTO>(StatusCodeEnum.OK,ConvertType.To(sale));
             }
-            _context.SaveChanges();
-            return _apiResponse.ResponseRet<SaleDTO>(StatusCodeEnum.OK,ConvertType.To(sale));
+            catch (ApiException e)
+            {
+                return _apiResponse.ResponseRet<SaleDTO>(e);
+            }
+            catch (Exception e)
+            {
+                return _apiResponse.ResponseRetWithoutEnumerable(e);
+            }
         }
 
         public List<Car> GetCarList(List<int> ids)

@@ -30,6 +30,18 @@ namespace DesafioRumoSolucoes
             services.AddScoped<CarDealershipContext, CarDealershipContext>();
             services.AddScoped<ISaleService, SaleService>();
             services.AddScoped<ISaleRepository, SaleRepository>();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1",
+                    new Microsoft.OpenApi.Models.OpenApiInfo
+                    {
+                        Title = "Rumo Soluções",
+                        Version = "V1",
+                        Description = "Venda de Carro"
+                    });
+            });
+
             services.AddControllers();
         }
 
@@ -50,6 +62,13 @@ namespace DesafioRumoSolucoes
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "");
             });
         }
     }
